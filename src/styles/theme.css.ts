@@ -1,14 +1,27 @@
-import { createGlobalTheme } from "@vanilla-extract/css";
+import { createGlobalTheme, createGlobalThemeContract } from "@vanilla-extract/css";
 
-export const theme = createGlobalTheme(':root', {
+export const theme = createGlobalThemeContract({
   primary: {
-    main: '#08D9D6',
-    light: '#75f9f8',
-    dark: '#046c6b',
+    main: '--primary-main',
+    light: '--primary-light',
+    dark: '--primary-dark',
+  },
+  colors: {
+    background: '--colors-background',
+    white: '--colors-white',
+    black: '--colors-black'
+  }
+});
+
+createGlobalTheme(':root', theme, {
+  primary: {
+    main: "#ff2e63",
+    light: "#ff97b1",
+    dark: "#801732",
   },
   colors: {
     background: '#252A34',
     white: '#EAEAEA',
-    black: "#121212"
+    black: '#121212',
   }
 });

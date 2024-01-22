@@ -6,7 +6,7 @@ const buttonDefault = style({
   border: `1px solid ${theme.primary.main}`,
   padding: "0.5rem 1rem",
   fontWeight: "bold",
-  color: theme.colors.black,
+  color: theme.colors.white,
   cursor: "pointer",
   textTransform: "uppercase",
   ":hover": {
