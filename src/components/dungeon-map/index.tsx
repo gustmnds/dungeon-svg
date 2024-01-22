@@ -1,6 +1,6 @@
 import { Room } from "../../utils/dungeon-gen/dto/room.dto"
 import { DungeonConnections } from "./dungeon-connections";
-import { Container } from "./dungeon-map.css";
+import { Container, Text } from "./dungeon-map.css";
 import { DungeonRooms } from "./dungeon-rooms";
 import { useDungeonMap } from "./hooks/use-dungeon-map";
 
@@ -19,6 +19,15 @@ export function DungeonMap({ rooms }: DungeonMapProps) {
         <DungeonRooms rooms={rooms}/>
         <DungeonConnections rooms={rooms}/>
       </g>
+      <text
+        x="50%"
+        y="30px"
+        className={Text}
+        textAnchor="middle"
+        dominantBaseline="middle"
+      >
+        Dungeon Generator
+      </text>
     </svg>
   )
 }

@@ -26,7 +26,8 @@ export function useDungeonMap({ rooms }: UseDungeonMapProps) {
 
   useEffect(() => {
     const svg = select<SVGSVGElement, unknown>(svgRef.current!);
-    svg.call(d3Zoom.transform, zoomIdentity.translate(256, 256).scale(1/2));
+    const { innerWidth, innerHeight } = window;
+    svg.call(d3Zoom.transform, zoomIdentity.translate(innerWidth/2, innerHeight/2).scale(1/2));
 
   }, [d3Zoom, rooms]);
 

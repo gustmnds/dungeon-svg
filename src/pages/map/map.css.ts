@@ -1,5 +1,4 @@
 import { style } from "@vanilla-extract/css";
-import { theme } from "../../styles/theme.css";
 
 export const container = style({
   display: "flex",
@@ -11,13 +10,12 @@ export const container = style({
   gap: "1rem"
 });
 
-export const title = style({
-  color: theme.primary.main,
-  fontSize: "40px"
-});
-
 export const controls = style({
   display: "flex",
-  width: "512px",
+  maxWidth: "512px",
+  width: "100%",
   gap: "1rem",
+  position: "absolute",
+  bottom: 0,
+  padding: "1rem"
 });
