@@ -27,6 +27,8 @@ jobs:
       - name: Vite Github Pages Deployer
         uses: skywarth/vite-github-pages-deployer@v1.3.0
         id: deploy_to_pages
+        with:
+          package_manager: yarn
 
       - name: dump outputs
         run:  echo "${{steps.deploy_to_pages.outputs.github_pages_url}}"
