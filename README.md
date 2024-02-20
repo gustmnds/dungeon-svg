@@ -3,7 +3,7 @@
 </h3>
 
 <h6 align="center">
-  <a href="https://gustmnds.github.io/dungeon-svg" target="_blank">Online Preview</a>
+  <a href="https://gustmnds.github.io/dungeon-svg">Online Preview</a>
 </h6>
 
 <h6 align="center">
@@ -31,7 +31,7 @@
 ### ✨ Features
 
 - **Random Generation:** generate random dungeons each time with specified amount of rooms
-- **Critical Path:** each generated dungeon has only one path from <span style="color: lightgreen">start</span> to <span style="color: red">end</span>
+- **Critical Path:** each generated dungeon has only one path from ${\text{\color{green}start}}$ to ${\text{\color{red}end}}$
 
 &nbsp;
 
@@ -65,7 +65,7 @@ yarn dev
 
 <p align="center">
 	Copyright &copy; 2024
-	<a href="https://github.com/gustmnds" target="_blank">
+	<a href="https://github.com/gustmnds">
 		Gustavo Mendes
 	</a>
 <p align="center">
